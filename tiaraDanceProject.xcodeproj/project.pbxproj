@@ -13,6 +13,12 @@
 		5B24507C29C9A5BB00353D1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B24507A29C9A5BB00353D1A /* Main.storyboard */; };
 		5B24507E29C9A5BD00353D1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B24507D29C9A5BD00353D1A /* Assets.xcassets */; };
 		5B24508129C9A5BD00353D1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B24507F29C9A5BD00353D1A /* LaunchScreen.storyboard */; };
+		5B24508B29C9CFB900353D1A /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B24508A29C9CFB900353D1A /* Tabbar.storyboard */; };
+		5B24508D29C9F38000353D1A /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24508C29C9F38000353D1A /* TabbarController.swift */; };
+		5B24509329CA4B2100353D1A /* feedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24509229CA4B2100353D1A /* feedViewController.swift */; };
+		5B24509529CA4B4100353D1A /* notificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24509429CA4B4100353D1A /* notificationsViewController.swift */; };
+		5B24509729CA4B5000353D1A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24509629CA4B5000353D1A /* ChatViewController.swift */; };
+		5B24509929CA4B6500353D1A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24509829CA4B6500353D1A /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		5B24507D29C9A5BD00353D1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B24508029C9A5BD00353D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B24508229C9A5BD00353D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B24508A29C9CFB900353D1A /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
+		5B24508C29C9F38000353D1A /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		5B24509229CA4B2100353D1A /* feedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedViewController.swift; sourceTree = "<group>"; };
+		5B24509429CA4B4100353D1A /* notificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsViewController.swift; sourceTree = "<group>"; };
+		5B24509629CA4B5000353D1A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5B24509829CA4B6500353D1A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,67 @@
 			children = (
 				5B24507429C9A5BB00353D1A /* AppDelegate.swift */,
 				5B24507629C9A5BB00353D1A /* SceneDelegate.swift */,
-				5B24507829C9A5BB00353D1A /* ViewController.swift */,
-				5B24507A29C9A5BB00353D1A /* Main.storyboard */,
+				5B24508929C9CF2200353D1A /* main */,
+				5B24508829C9CEE800353D1A /* Tabbar */,
 				5B24507D29C9A5BD00353D1A /* Assets.xcassets */,
 				5B24507F29C9A5BD00353D1A /* LaunchScreen.storyboard */,
 				5B24508229C9A5BD00353D1A /* Info.plist */,
 			);
 			path = tiaraDanceProject;
+			sourceTree = "<group>";
+		};
+		5B24508829C9CEE800353D1A /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				5B24508E29CA495A00353D1A /* feed */,
+				5B24509029CA49D800353D1A /* notifications */,
+				5B24508F29CA498800353D1A /* chat */,
+				5B24509129CA49F800353D1A /* profile */,
+				5B24508A29C9CFB900353D1A /* Tabbar.storyboard */,
+				5B24508C29C9F38000353D1A /* TabbarController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		5B24508929C9CF2200353D1A /* main */ = {
+			isa = PBXGroup;
+			children = (
+				5B24507829C9A5BB00353D1A /* ViewController.swift */,
+				5B24507A29C9A5BB00353D1A /* Main.storyboard */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		5B24508E29CA495A00353D1A /* feed */ = {
+			isa = PBXGroup;
+			children = (
+				5B24509229CA4B2100353D1A /* feedViewController.swift */,
+			);
+			path = feed;
+			sourceTree = "<group>";
+		};
+		5B24508F29CA498800353D1A /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				5B24509629CA4B5000353D1A /* ChatViewController.swift */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
+		5B24509029CA49D800353D1A /* notifications */ = {
+			isa = PBXGroup;
+			children = (
+				5B24509429CA4B4100353D1A /* notificationsViewController.swift */,
+			);
+			path = notifications;
+			sourceTree = "<group>";
+		};
+		5B24509129CA49F800353D1A /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				5B24509829CA4B6500353D1A /* ProfileViewController.swift */,
+			);
+			path = profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B24508B29C9CFB900353D1A /* Tabbar.storyboard in Resources */,
 				5B24508129C9A5BD00353D1A /* LaunchScreen.storyboard in Resources */,
 				5B24507E29C9A5BD00353D1A /* Assets.xcassets in Resources */,
 				5B24507C29C9A5BB00353D1A /* Main.storyboard in Resources */,
@@ -138,8 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B24509329CA4B2100353D1A /* feedViewController.swift in Sources */,
 				5B24507929C9A5BB00353D1A /* ViewController.swift in Sources */,
+				5B24508D29C9F38000353D1A /* TabbarController.swift in Sources */,
+				5B24509729CA4B5000353D1A /* ChatViewController.swift in Sources */,
+				5B24509529CA4B4100353D1A /* notificationsViewController.swift in Sources */,
 				5B24507529C9A5BB00353D1A /* AppDelegate.swift in Sources */,
+				5B24509929CA4B6500353D1A /* ProfileViewController.swift in Sources */,
 				5B24507729C9A5BB00353D1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
