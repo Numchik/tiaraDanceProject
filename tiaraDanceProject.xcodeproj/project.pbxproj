@@ -19,6 +19,9 @@
 		5B24509529CA4B4100353D1A /* notificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24509429CA4B4100353D1A /* notificationsViewController.swift */; };
 		5B24509729CA4B5000353D1A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24509629CA4B5000353D1A /* ChatViewController.swift */; };
 		5B24509929CA4B6500353D1A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24509829CA4B6500353D1A /* ProfileViewController.swift */; };
+		5B24509B29CA607600353D1A /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24509A29CA607600353D1A /* ProfileTableViewCell.swift */; };
+		5B24509E29CA644600353D1A /* HederView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B24509D29CA644600353D1A /* HederView.xib */; };
+		5B2450A029CA649000353D1A /* HederView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B24509F29CA649000353D1A /* HederView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		5B24509429CA4B4100353D1A /* notificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsViewController.swift; sourceTree = "<group>"; };
 		5B24509629CA4B5000353D1A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5B24509829CA4B6500353D1A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5B24509A29CA607600353D1A /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		5B24509D29CA644600353D1A /* HederView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HederView.xib; sourceTree = "<group>"; };
+		5B24509F29CA649000353D1A /* HederView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HederView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +134,20 @@
 		5B24509129CA49F800353D1A /* profile */ = {
 			isa = PBXGroup;
 			children = (
+				5B24509C29CA642600353D1A /* Heder */,
 				5B24509829CA4B6500353D1A /* ProfileViewController.swift */,
+				5B24509A29CA607600353D1A /* ProfileTableViewCell.swift */,
 			);
 			path = profile;
+			sourceTree = "<group>";
+		};
+		5B24509C29CA642600353D1A /* Heder */ = {
+			isa = PBXGroup;
+			children = (
+				5B24509D29CA644600353D1A /* HederView.xib */,
+				5B24509F29CA649000353D1A /* HederView.swift */,
+			);
+			path = Heder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B24509E29CA644600353D1A /* HederView.xib in Resources */,
 				5B24508B29C9CFB900353D1A /* Tabbar.storyboard in Resources */,
 				5B24508129C9A5BD00353D1A /* LaunchScreen.storyboard in Resources */,
 				5B24507E29C9A5BD00353D1A /* Assets.xcassets in Resources */,
@@ -208,6 +226,8 @@
 				5B24509329CA4B2100353D1A /* feedViewController.swift in Sources */,
 				5B24507929C9A5BB00353D1A /* ViewController.swift in Sources */,
 				5B24508D29C9F38000353D1A /* TabbarController.swift in Sources */,
+				5B2450A029CA649000353D1A /* HederView.swift in Sources */,
+				5B24509B29CA607600353D1A /* ProfileTableViewCell.swift in Sources */,
 				5B24509729CA4B5000353D1A /* ChatViewController.swift in Sources */,
 				5B24509529CA4B4100353D1A /* notificationsViewController.swift in Sources */,
 				5B24507529C9A5BB00353D1A /* AppDelegate.swift in Sources */,
